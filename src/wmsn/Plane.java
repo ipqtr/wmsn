@@ -1,7 +1,5 @@
 package wmsn;
 
-import java.util.Arrays;
-
 public class Plane {
 	public static Coordinates [][] plane = new Coordinates[100][100];
 
