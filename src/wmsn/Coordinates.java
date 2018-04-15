@@ -4,6 +4,7 @@ public class Coordinates {
 	 public int x;
 	 public int y;
 	 public String content;
+	 public Node node;
 	
 	public Coordinates(int x, int y)
 	{

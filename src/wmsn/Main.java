@@ -6,7 +6,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		Plane plane = new Plane();
-		plane.insert("h", 0, 99);
+		//plane.insert("h", 0, 0);
 		plane.show();
 		
 	}
