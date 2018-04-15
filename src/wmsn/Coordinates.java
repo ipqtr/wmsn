@@ -14,6 +14,9 @@ public class Coordinates {
 	{
 		System.out.println("x value is: " + x + "and y value is : " + y);
 	}
-	
+	public void add(String content)
+	{
+		this.content = content;
+	}
 	
 }
