@@ -1,19 +1,22 @@
 package wmsn;
 
 public class Coordinates {
-	 public int x;
-	 public int y;
+	 public int r;
+	 public int c;
 	 public String content;
-	 public Node node;
+	 public Node[] coverage = new Node[12];
 	
-	public Coordinates(int x, int y)
+	public Coordinates(int r, int c)
 	{
-		this.x = x;
-		this.y = y;
+
+		for(int i = 0; i < 12; i++)
+			coverage[0] = new Node(0);
+		this.r = r;
+		this.c = c;
 	}
 	public void print()
 	{
-		System.out.println("x value is: " + x + "and y value is : " + y);
+		System.out.println("row value is: " + r + "and column value is : " + c);
 	}
 	public void add(String content)
 	{
