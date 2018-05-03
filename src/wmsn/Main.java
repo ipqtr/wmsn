@@ -14,8 +14,9 @@ public class Main {
 		//plane.insert("h", 0, 0);
 		plane.draw();
 
-		plane.show();
+		//plane.show();
 		
+		//Count.printQueueNodesEnergy();
 		
 		
 	}
