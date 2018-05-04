@@ -11,8 +11,7 @@ public class Plane {
 			for(int r = 0; r < rows; r++)
 			{
 				plane[r][c] = new Coordinates(r,c);
-				Count.increaseNodesCount();
-				Count.printQueueNodesEnergy();
+
 			}
 	}
 	
@@ -57,11 +56,11 @@ public class Plane {
 					if(cc+i<columns && cc -i > 0 && rr < rows & rr > 0)
 						plane[rr][cc-i].coverage[0].type = Node.ROADSIDE_NODE_COVERAGE;
 					
-					Count.increaseEnergy();
+
 					}
 				}
 			}
-			Count.printQueueNodesEnergy();
+
 		}
 
 			
@@ -87,11 +86,11 @@ public class Plane {
 						if(cc+i<columns && cc -i > 0 && rr < rows & rr > 0)
 							plane[rr][cc-i].coverage[0].type = Node.ROADSIDE_NODE_COVERAGE;
 					
-						Count.increaseEnergy();
+					
 					}
 				}
 			}
-			Count.printQueueNodesEnergy();
+		
 		}
 		// lower triangle
 		for(int r = 200; r < 501; r+=99)
@@ -113,11 +112,11 @@ public class Plane {
 						if(cc+i<columns && cc -i > 0 && rr < rows & rr > 0)
 							plane[rr][cc-i].coverage[0].type = Node.ROADSIDE_NODE_COVERAGE;
 					
-						Count.increaseEnergy();
+					
 					}
 				}
 			}
-			Count.printQueueNodesEnergy();
+			
 		}
 		
 		for(int r = 500; r < 1000; r+=99)
@@ -139,12 +138,12 @@ public class Plane {
 						if(cc+i<columns && cc -i > 0 && rr < rows & rr > 0)
 							plane[rr][cc-i].coverage[0].type = Node.ROADSIDE_NODE_COVERAGE;
 					
-						Count.increaseEnergy();
+					
 					}
 				}
 			}
 		}
-		Count.printQueueNodesEnergy();
+		
 	}
 	
 	
